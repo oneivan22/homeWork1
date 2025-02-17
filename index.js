@@ -3,7 +3,7 @@ const changeProposal = (arr) => {
 
     for (let i = 0; i < arr.length; i++) {
       const { word, divisibility } = arr[i];
-      const newWord = ''; 
+      let newWord = ''; 
       for (let j = 0; j < word.length; j++) {
         let isEven = (j + 1) % 2 === 0;
         if ((divisibility === 'чётный' && isEven) || (divisibility === 'нечётный' && !isEven)) {
